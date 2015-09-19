@@ -8,7 +8,6 @@ requirejs.config({
         underscore: "backbone.marionette/node_modules/underscore/underscore-min",
         moment: "moment/min/moment.min",
         backbone: "backbone.marionette/node_modules/backbone/backbone-min",
-        babysitter: "backbone.marionette/node_modules/backbone.babysitter/lib",
         backboneM: "backbone.marionette/lib/backbone.marionette.min"
     }
 });
