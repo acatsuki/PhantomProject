@@ -21,16 +21,22 @@ function sendFile(err, file, response)
 
 function getFile(exists, response, localpath)
 {
-    if(!exists) return sendError(404, '404 Not Found', response);
+    if(!exists){
+        return sendError(404, '404 Not Found', response);
+    }
     fs.readFile(localpath, "binary",
-        function(err, file){ sendFile(err, file, response);});
+        function(err, file){
+            sendFile(err, file, response);
+        });
 }
 
 function getFilename(request, response)
 {
     var urlpath = url.parse(request.url).pathname; // following domain or IP and port
     var localpath = path.join(process.cwd(), urlpath); // if we are at root
-    fs.exists(localpath, function(result) { getFile(result, response, localpath)});
+    fs.exists(localpath, function(result) {
+        getFile(result, response, localpath);
+    });
 }
 
 var server = http.createServer(getFilename);
