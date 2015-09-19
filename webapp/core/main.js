@@ -8,19 +8,21 @@ requirejs.config({
         underscore: "backbone.marionette/node_modules/underscore/underscore-min",
         moment: "moment/min/moment.min",
         backbone: "backbone.marionette/node_modules/backbone/backbone-min",
-        backboneM: "backbone.marionette/lib/backbone.marionette.min"
+        backboneM: "backbone.marionette/lib/backbone.marionette.min",
+        dust: "dust/lib/dust",
+        homeDust: "../web/js/compiled/dust/home.dust",
+        home: "../web/js/compiled/models/home/home"
     }
 });
 
 var win = window;
 
-requirejs(['jquery','underscore', 'moment', 'backboneM'],
-    function($, underscore, moment, backboneM, undefined) {
+requirejs(['jquery','underscore', 'moment', 'backboneM', 'dust'],
+    function($, underscore, moment, backboneM) {
         /**
          * PH controller - Main namespace for the whole system
          */
         win.PH = new Backbone.Marionette.Application();
-
 
         /**
          * Backbone Router initialization
@@ -147,6 +149,8 @@ requirejs(['jquery','underscore', 'moment', 'backboneM'],
         PH.Libs = {};
 
         PH.Models = {};
+
+        PH.Views = {};
 
         PH.Collections = {};
 
@@ -321,6 +325,8 @@ requirejs(['jquery','underscore', 'moment', 'backboneM'],
 
             PH.log("[PH.start] Starting PH Backbone.Marionette application", PH.log.DEBUG);
             PH.start();
+
+            requirejs(['homeDust', 'home']);
 
             /*if (PH.data.logged_in) {
              PH.heartbeat.start();
