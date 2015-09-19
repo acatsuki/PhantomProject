@@ -16,6 +16,16 @@ module.exports = function(grunt) {
         },
 
         concat: {
+            "js_core": {
+                "src": [
+                    "webapp/core/main/js/core.controller.js",
+                    "webapp/core/main/js/core.models.js",
+                    "webapp/core/main/js/core.views.js"
+                ],
+                "dest": "web/js/compiled/models/core/core.js"
+
+            },
+
             "js_home": {
                 "src": [
                     "webapp/pages/home/js/home.controller.js",
@@ -45,6 +55,7 @@ module.exports = function(grunt) {
                     "expand": true,
                     "cwd": "",
                     "src": [
+                        "webapp/core/**/dust/*.dust",
                         "webapp/pages/**/dust/*.dust"
                     ],
                     "dest": "web/js/compiled/dust",
@@ -76,6 +87,7 @@ module.exports = function(grunt) {
             "js": {
                 "files": "<%= jshint.files %>",
                 "tasks": [
+                    "concat:js_core",
                     "concat:js_home"
                 ]
             }

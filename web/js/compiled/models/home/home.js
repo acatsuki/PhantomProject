@@ -54,15 +54,16 @@
 
         var display = _.bind(function(){
             var self = this;
-            _.delay(function(){
-                var layout = new self.Views.Layout();
-                layout.render();
-            }, 50)
 
+            var layout = new this.Views.Layout();
+
+            PH.Core.layout.mainContentRegion.show(layout);
         }, Home);
 
         var registerEvents = _.bind(function(){
-
+            PH.vent.on("home:display", function(){
+                display();
+            });
         }, Home);
 
         /**
@@ -70,9 +71,7 @@
          */
         Home.init = function() {
             PH.log("[PH.Home.init] Initializing Home page", PH.log.DEBUG);
-
             registerEvents();
-            display();
         };
 
 
@@ -84,10 +83,8 @@
      * Bind initializer for Admin app
      */
     PH.addInitializer(function() {
-        // Only initialize module if user is not logged in
-        // if (!PH_USER_CONNECTED) {
+        console.log("addInitializer")
         PH.Home.init();
-        // }
     });
 
 
@@ -145,9 +142,9 @@
          * @type {Marionette.LayoutView}
          */
         Views.Layout = Marionette.LayoutView.extend({
-            "el": "#main-content",
-
             "template": "home",
+
+            "id": "home-content",
 
             "regions": {},
 

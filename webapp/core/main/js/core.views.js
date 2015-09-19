@@ -9,31 +9,33 @@
 
 
     /**
-     * Home app views
+     * Core app views
      * ---------------
      *
      * @author Nicolas
      */
-    PH.Home.Views = (function() {
+    PH.Core.Views = (function() {
         var Views = {};
 
 
         /**
-         * Main Home layout, attaches itself to html generated with twig
+         * Main Core layout, attaches itself to html generated with twig
          *
          * @type {Marionette.LayoutView}
          */
         Views.Layout = Marionette.LayoutView.extend({
-            "template": "home",
+            "el": "body",
 
-            "id": "home-content",
+            "template": "core",
 
-            "regions": {},
+            "regions": {
+                "mainContentRegion": "#main-content"
+            },
 
             "events": {},
 
             "initialize": function() {
-                PH.log("[PH.Home.Views.Layout.initialize] Initializing Home layout ", PH.log.DEBUG);
+                PH.log("[PH.Core.Views.Layout.initialize] Initializing Core layout ", PH.log.DEBUG);
             }
         });
 

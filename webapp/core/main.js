@@ -11,6 +11,8 @@ requirejs.config({
         backboneM: "backbone.marionette/lib/backbone.marionette.min",
         dust: "dust/lib/dust",
         homeDust: "../web/js/compiled/dust/home.dust",
+        coreDust: "../web/js/compiled/dust/core.dust",
+        core: "../web/js/compiled/models/core/core",
         home: "../web/js/compiled/models/home/home"
     }
 });
@@ -195,15 +197,6 @@ requirejs(['jquery','underscore', 'moment', 'backboneM', 'dust'],
 
                 view.on("empty", this.hideModal, this);
                 this.$el.dialog(_.extend(view.dialog_options || {}, {
-                    /*				"create": function() {
-                     var widget = $(this)
-                     .dialog("widget");
-                     $(".ui-dialog-titlebar-close", widget)
-                     .removeClass("ui-dialog-titlebar-close")
-                     .addClass("ui-icon-PH-dialog-close");
-                     $(".ui-icon-PH-dialog-close span", widget)
-                     .removeClass("ui-icon-closethick");
-                     },*/
                     "autoOpen": false
                 }));
                 this.$el.dialog('open');
@@ -281,11 +274,7 @@ requirejs(['jquery','underscore', 'moment', 'backboneM', 'dust'],
                             short_message += " : ";
                             short_message += data[i].originalEvent[event_name];
                         }
-                        /* else {
-                         short_message += "[";
-                         short_message += type_of;
-                         short_message += "]";
-                         }*/
+
                         short_message += " , ";
                     }
                     short_message += " } ";
@@ -326,7 +315,10 @@ requirejs(['jquery','underscore', 'moment', 'backboneM', 'dust'],
             PH.log("[PH.start] Starting PH Backbone.Marionette application", PH.log.DEBUG);
             PH.start();
 
-            requirejs(['homeDust', 'home']);
+            requirejs(['coreDust', 'core'], function(){
+                PH.vent.trigger("core:display");
+            });
+
 
             /*if (PH.data.logged_in) {
              PH.heartbeat.start();
