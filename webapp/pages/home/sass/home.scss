@@ -1,13 +1,46 @@
 #home-content {
-  background-color: #191919;
-  height: 1360px;
+  width: 100%;
+}
+
+#center-menu {
+  height: 230px;
   width: 960px;
-  color: #000;
+  color: #FFF;
+  display: inline-flex;
+  margin-left: 197px;
+  margin-top: 231px;
+  .logo{
+    background: url("../src/img/logo.png") no-repeat;
+    width: 319px;
+    height: 89px;
+    position: absolute;
+    left: 505px;
+  }
+  .concert{
+    background: url("../src/img/concert.png") no-repeat;
+    width: 369px;
+    height: 259px;
+    margin-left: 246px;
+    position: relative;
+    bottom: 20px;
 
-  .title {
-    color: #A00000;
-    font-size: 20px;
-    box-shadow: 1px 1px 12px #000;
+    span {
+      position: relative;
+      top: 217px;
+      left: 74px;
+    }
+  }
 
+  .guitars {
+    background: url("../src/img/guitars.png") no-repeat;
+    width: 277px;
+    height: 202px;
+    margin-left: 48px;
+
+    span {
+      position: relative;
+      top: 194px;
+      left: 88px;
+    }
   }
 }

@@ -55,9 +55,14 @@
         var display = _.bind(function(){
             var self = this;
 
-            var layout = new this.Views.Layout();
+            requirejs(["/webapp/pages/home/lang/ph.lang."+ PH.lang +".js"], function(){
 
-            PH.Core.layout.mainContentRegion.show(layout);
+                self.homeLayout = new self.Views.Layout({
+                    model: new self.Models.Home(PH.lang.home)
+                });
+
+                PH.Core.layout.mainContentRegion.show(self.homeLayout);
+            });
         }, Home);
 
         var registerEvents = _.bind(function(){
@@ -108,8 +113,6 @@
         var Models = {};
 
         Models.Home = Backbone.Model.extend();
-
-
 
         return Models;
     })();

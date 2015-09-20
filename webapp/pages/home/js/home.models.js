@@ -18,8 +18,6 @@
 
         Models.Home = Backbone.Model.extend();
 
-
-
         return Models;
     })();
 

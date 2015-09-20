@@ -1,16 +1,70 @@
 body {
-  background-color: #313131; }
+  background-color: #232323;
+  width: auto;
+  margin: 0; }
+  body #main-content {
+    width: 100%; }
+
+header {
+  width: 100%;
+  height: 35px;
+  background-color: #222222;
+  box-shadow: 1px 1px 12px #000;
+  color: #FFF;
+  position: relative;
+  z-index: 1; }
+  header .logo-label {
+    font-size: 12px;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-weight: bold;
+    padding: 11px;
+    display: inline-block; }
+
+#habillage {
+  background: url("../src/img/habillage.png") no-repeat;
+  width: 484px;
+  height: 359px;
+  position: absolute;
+  top: -36px;
+  z-index: 0; }
 
 /*# sourceMappingURL=core.css.map */
 
 #home-content {
-  background-color: #191919;
-  height: 1360px;
+  width: 100%; }
+
+#center-menu {
+  height: 230px;
   width: 960px;
-  color: #000; }
-  #home-content .title {
-    color: #A00000;
-    font-size: 20px;
-    box-shadow: 1px 1px 12px #000; }
+  color: #FFF;
+  display: inline-flex;
+  margin-left: 197px;
+  margin-top: 231px; }
+  #center-menu .logo {
+    background: url("../src/img/logo.png") no-repeat;
+    width: 319px;
+    height: 89px;
+    position: absolute;
+    left: 505px; }
+  #center-menu .concert {
+    background: url("../src/img/concert.png") no-repeat;
+    width: 369px;
+    height: 259px;
+    margin-left: 246px;
+    position: relative;
+    bottom: 20px; }
+    #center-menu .concert span {
+      position: relative;
+      top: 217px;
+      left: 74px; }
+  #center-menu .guitars {
+    background: url("../src/img/guitars.png") no-repeat;
+    width: 277px;
+    height: 202px;
+    margin-left: 48px; }
+    #center-menu .guitars span {
+      position: relative;
+      top: 194px;
+      left: 88px; }
 
 /*# sourceMappingURL=home.css.map */

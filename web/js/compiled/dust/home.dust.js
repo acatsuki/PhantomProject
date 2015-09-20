@@ -1,2 +1,2 @@
 // webapp/pages/home/dust/home.dust
-(function(){dust.register("home",body_0);function body_0(chk,ctx){return chk.w("<div class=\"title\">HOME PAGE</div>");}body_0.__dustBody=!0;return body_0;})();
+(function(){dust.register("home",body_0);function body_0(chk,ctx){return chk.w("<div id=\"center-menu\"><div class=\"logo\"></div><div class=\"guitars\"><span>").f(ctx.get(["guitar"], false),ctx,"h").w("</span></div><div class=\"concert\"><span>").f(ctx.get(["concert"], false),ctx,"h").w("</span></div></div>");}body_0.__dustBody=!0;return body_0;})();

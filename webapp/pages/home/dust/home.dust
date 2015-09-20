@@ -1,1 +1,5 @@
-<div class="title">HOME PAGE</div>
+<div id="center-menu">
+    <div class="logo"></div>
+    <div class="guitars"><span>{guitar}</span></div>
+    <div class="concert"><span>{concert}</span></div>
+</div>
