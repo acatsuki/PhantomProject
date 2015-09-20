@@ -73,6 +73,9 @@ header {
       position: relative;
       top: 217px;
       left: 74px; }
+    #center-menu .concert span:hover {
+      color: #A00000;
+      cursor: pointer; }
   #center-menu .guitars {
     background: url("../src/img/guitars.png") no-repeat;
     width: 277px;
@@ -82,5 +85,8 @@ header {
       position: relative;
       top: 194px;
       left: 88px; }
+    #center-menu .guitars span:hover {
+      color: #A00000;
+      cursor: pointer; }
 
 /*# sourceMappingURL=home.css.map */

@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c13e86b-fe0a-439d-8abe-a9e46c02434a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/core/main/lang/ph.lang.en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/core/main/lang/ph.lang.fr.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/concat.css" afterPath="$PROJECT_DIR$/web/css/concat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/core/main/js/core.controller.js" afterPath="$PROJECT_DIR$/webapp/core/main/js/core.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/core/core.css.map" afterPath="$PROJECT_DIR$/web/css/core/core.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/core/core.css" afterPath="$PROJECT_DIR$/web/css/core/core.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/dust/core.dust.js" afterPath="$PROJECT_DIR$/web/js/compiled/dust/core.dust.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/core/main/dust/core.dust" afterPath="$PROJECT_DIR$/webapp/core/main/dust/core.dust" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/models/core/core.js" afterPath="$PROJECT_DIR$/web/js/compiled/models/core/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/core/main/sass/core.scss" afterPath="$PROJECT_DIR$/webapp/core/main/sass/core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/pages/home/js/home.controller.js" afterPath="$PROJECT_DIR$/webapp/pages/home/js/home.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/compiled/models/home/home.js" afterPath="$PROJECT_DIR$/web/js/compiled/models/home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/core/main.js" afterPath="$PROJECT_DIR$/webapp/core/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.en.js" afterPath="$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.fr.js" afterPath="$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/home/home.css.map" afterPath="$PROJECT_DIR$/web/css/home/home.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/home/home.css" afterPath="$PROJECT_DIR$/web/css/home/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/pages/home/sass/home.scss" afterPath="$PROJECT_DIR$/webapp/pages/home/sass/home.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phantom_project.iws" />
@@ -41,31 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="core.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webapp/core/main/sass/core.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7782609">
-              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/core/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.9310346">
               <caret line="312" column="0" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.dust" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/pages/home/dust/home.dust">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -91,53 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ph.lang.fr.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/core/main/lang/ph.lang.fr.js">
+      <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/pages/home/sass/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ph.lang.en.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-              <folding>
-                <marker date="1442777514662" expanded="true" signature="15:93" placeholder="{&quot;guitar&quot;: &quot;I search a band&quot;...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/pages/home/js/home.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ph.lang.en.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/core/main/lang/ph.lang.en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ph.lang.fr.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.fr.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.8347826">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -182,7 +109,6 @@
         <option value="$PROJECT_DIR$/webapp/pages/home/js/home.models.js" />
         <option value="$PROJECT_DIR$/webapp/pages/home/dust/home.dust" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/webapp/pages/home/sass/home.scss" />
         <option value="$PROJECT_DIR$/webapp/core/main.js" />
         <option value="$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.fr.js" />
         <option value="$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.en.js" />
@@ -192,6 +118,7 @@
         <option value="$PROJECT_DIR$/webapp/core/main/js/core.controller.js" />
         <option value="$PROJECT_DIR$/webapp/core/main/dust/core.dust" />
         <option value="$PROJECT_DIR$/webapp/core/main/sass/core.scss" />
+        <option value="$PROJECT_DIR$/webapp/pages/home/sass/home.scss" />
       </list>
     </option>
   </component>
@@ -297,46 +224,6 @@
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantom_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantom_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -356,37 +243,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantom_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,7 +421,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442770272044</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="mise en place des bouttons login et inscription">
+      <created>1442778350889</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1442778350889</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -629,7 +496,8 @@
     <MESSAGE value="mise en place de sass, la compilation des fichier sass et la concaténation des css" />
     <MESSAGE value="mise en place du disign provisoir, et gestion de la lang" />
     <MESSAGE value="ajustement css" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustement css" />
+    <MESSAGE value="mise en place des bouttons login et inscription" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise en place des bouttons login et inscription" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -806,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/nodeserver/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/compiled/dust/home.dust.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -928,20 +789,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1442778270988" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1442778270988" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1442778270988" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1442778270988" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1442778270988" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1442781967487" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1442781967487" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1442781967487" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1442781967487" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1442781967487" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/pages/home/sass/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.307693">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,20 +806,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/core/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9310346">
-          <caret line="312" column="0" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/pages/home/lang/ph.lang.en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding>
-            <marker date="1442777514662" expanded="true" signature="15:93" placeholder="{&quot;guitar&quot;: &quot;I search a band&quot;...}" />
+            <marker date="1442777514662" expanded="true" signature="-1:-1" placeholder="{&quot;guitar&quot;: &quot;I search a band&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -1019,10 +864,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/nodeserver/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2798354">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/core/main/sass/core.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7782609">
           <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/core/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9310346">
+          <caret line="312" column="0" selection-start-line="312" selection-start-column="0" selection-end-line="312" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/pages/home/sass/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8347826">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
           <folding />
         </state>
       </provider>

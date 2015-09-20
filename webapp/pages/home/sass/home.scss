@@ -29,6 +29,11 @@
       top: 217px;
       left: 74px;
     }
+
+    span:hover {
+      color: #A00000;
+      cursor: pointer;
+    }
   }
 
   .guitars {
@@ -41,6 +46,11 @@
       position: relative;
       top: 194px;
       left: 88px;
+    }
+
+    span:hover {
+      color: #A00000;
+      cursor: pointer;
     }
   }
 }
