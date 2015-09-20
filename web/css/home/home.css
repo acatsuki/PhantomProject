@@ -6,14 +6,14 @@
   width: 960px;
   color: #FFF;
   display: inline-flex;
-  margin-left: 197px;
+  margin-left: 210px;
   margin-top: 231px; }
   #center-menu .logo {
     background: url("../src/img/logo.png") no-repeat;
     width: 319px;
     height: 89px;
     position: absolute;
-    left: 505px; }
+    left: 513px; }
   #center-menu .concert {
     background: url("../src/img/concert.png") no-repeat;
     width: 369px;
