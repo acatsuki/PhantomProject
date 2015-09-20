@@ -1,0 +1,16 @@
+body {
+  background-color: #313131; }
+
+/*# sourceMappingURL=core.css.map */
+
+#home-content {
+  background-color: #191919;
+  height: 1360px;
+  width: 960px;
+  color: #000; }
+  #home-content .title {
+    color: #A00000;
+    font-size: 20px;
+    box-shadow: 1px 1px 12px #000; }
+
+/*# sourceMappingURL=home.css.map */

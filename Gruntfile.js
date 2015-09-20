@@ -34,6 +34,14 @@ module.exports = function(grunt) {
                 ],
                 "dest": "web/js/compiled/models/home/home.js"
 
+            },
+
+            css: {
+                src: [
+                    'web/css/core/*.css',
+                    'web/css/home/*.css'
+                ],
+                dest: 'web/css/concat.css'
             }
         },
 
@@ -73,11 +81,28 @@ module.exports = function(grunt) {
             }
         },
 
+        sass: {
+            dist: {
+                files: {
+                    'web/css/core/core.css' : 'webapp/core/sass/*.scss',
+                    'web/css/home/home.css' : 'webapp/pages/home/sass/*.scss'
+                }
+            }
+        },
+
         watch: {
            /* "jshint": {
                 "files": ['<%= jshint.files %>'],
                 "tasks": ["jshint"]
             },*/
+
+            "css": {
+                files: 'webapp/**/sass/*.scss',
+                tasks: [
+                    "sass",
+                    "concat:css"
+                ]
+            },
 
             "dust": {
                 "files": "**/*.dust",
@@ -96,10 +121,12 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-css');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks("grunt-dust");
 
     // Declare default task
-    grunt.registerTask("default", ["dust", "concat", "jshint"]);
+    grunt.registerTask("default", ["concat", "sass", "css", "dust", "jshint"]);
 
 };
