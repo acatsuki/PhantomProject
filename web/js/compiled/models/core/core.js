@@ -19,12 +19,16 @@
 
         var display = _.bind(function(){
             var self = this;
+            
+            requirejs(["/webapp/core/main/lang/ph.lang."+ PH.location +".js"], function() {
+                self.layout = new self.Views.Layout({
+                    model: new Backbone.Model(PH.lang.core)
+                });
+                self.layout.render();
 
-            self.layout = new self.Views.Layout();
-            self.layout.render();
-
-            requirejs(['homeDust', 'home'], function(){
-                PH.vent.trigger("home:display");
+                requirejs(['homeDust', 'home'], function () {
+                    PH.vent.trigger("home:display");
+                });
             });
 
         }, Core);

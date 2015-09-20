@@ -55,7 +55,7 @@
         var display = _.bind(function(){
             var self = this;
 
-            requirejs(["/webapp/pages/home/lang/ph.lang."+ PH.lang +".js"], function(){
+            requirejs(["/webapp/pages/home/lang/ph.lang."+ PH.location +".js"], function(){
 
                 self.homeLayout = new self.Views.Layout({
                     model: new self.Models.Home(PH.lang.home)

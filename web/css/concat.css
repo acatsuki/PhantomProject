@@ -19,6 +19,22 @@ header {
     font-weight: bold;
     padding: 11px;
     display: inline-block; }
+  header .btn-content {
+    display: inline-block;
+    position: relative;
+    left: 79%; }
+    header .btn-content button {
+      margin-right: 8px;
+      margin-right: 8px;
+      border: 1px solid #FFF;
+      border-radius: 2px;
+      color: #FFF;
+      padding: 5px;
+      box-shadow: 1px 1px 12px #000; }
+      header .btn-content button.sign-in {
+        background-color: #c81b1b; }
+      header .btn-content button.sign-up {
+        background-color: #27a630; }
 
 #habillage {
   background: url("../src/img/habillage.png") no-repeat;

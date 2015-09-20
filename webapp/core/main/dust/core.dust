@@ -1,5 +1,9 @@
 <header>
     <span class="logo-label">PHANTOM PROJECT</span>
+    <div class="btn-content">
+        <button class="sign-in">{inscription}</button>
+        <button class="sign-up">{login}</button>
+    </div>
 </header>
 <div id="habillage"></div>
 <div id="main-content"></div>

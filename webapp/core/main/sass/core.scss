@@ -24,6 +24,31 @@ header {
     padding: 11px;
     display: inline-block;
   }
+
+  .btn-content {
+    display: inline-block;
+    position: relative;
+    left: 79%;
+
+    button{
+      margin-right: 8px;
+      margin-right: 8px;
+      border: 1px solid #FFF;
+      border-radius: 2px;
+      color: #FFF;
+      padding: 5px;
+      box-shadow: 1px 1px 12px #000;
+
+      &.sign-in {
+        background-color: #c81b1b;
+      }
+
+      &.sign-up {
+        background-color: #27a630;
+      }
+
+    }
+  }
 }
 
 #habillage {

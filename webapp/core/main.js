@@ -158,6 +158,8 @@ requirejs(['jquery','underscore', 'moment', 'backboneM', 'dust'],
 
         // Language object
         PH.lang = {};
+        PH.location = "";
+
 
         PH.root_url = "";
 
@@ -307,7 +309,7 @@ requirejs(['jquery','underscore', 'moment', 'backboneM', 'dust'],
             });
 
             // Set the lang on moment
-            PH.lang = navigator.language;
+            PH.location = navigator.language;
 
             // CodeIgniter domain
             //PH.data.domain = "http://" + PH_DOMAIN;
