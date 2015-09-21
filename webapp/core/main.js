@@ -12,6 +12,7 @@ requirejs.config({
         dust: "dust/lib/dust",
         homeDust: "../web/js/compiled/dust/home.dust",
         coreDust: "../web/js/compiled/dust/core.dust",
+        headerDust: "../web/js/compiled/dust/header.dust",
         core: "../web/js/compiled/models/core/core",
         home: "../web/js/compiled/models/home/home"
     }
@@ -317,7 +318,7 @@ requirejs(['jquery','underscore', 'moment', 'backboneM', 'dust'],
             PH.log("[PH.start] Starting PH Backbone.Marionette application", PH.log.DEBUG);
             PH.start();
 
-            requirejs(['coreDust', 'core'], function(){
+            requirejs(['coreDust', 'core', 'headerDust'], function(){
                 PH.vent.trigger("core:display");
             });
 

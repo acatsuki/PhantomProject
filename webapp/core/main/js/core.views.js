@@ -29,6 +29,7 @@
             "template": "core",
 
             "regions": {
+                "headerRegion": "header",
                 "mainContentRegion": "#main-content"
             },
 
@@ -36,6 +37,16 @@
 
             "initialize": function() {
                 PH.log("[PH.Core.Views.Layout.initialize] Initializing Core layout ", PH.log.DEBUG);
+            }
+        });
+
+        Views.Header = Marionette.LayoutView.extend({
+           "template": "header",
+
+            "regions": {},
+
+            "initialize": function() {
+                PH.log("[PH.Core.Views.Layout.initialize] Initializing Header layout ", PH.log.DEBUG);
             }
         });
 

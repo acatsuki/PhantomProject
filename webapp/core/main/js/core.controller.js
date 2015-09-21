@@ -25,6 +25,12 @@
                     model: new Backbone.Model(PH.lang.core)
                 });
                 self.layout.render();
+                
+                var header = new self.Views.Header({
+                    model: new Backbone.Model(PH.lang.core)
+                });
+
+                self.layout.headerRegion.show(header);
 
                 requirejs(['homeDust', 'home'], function () {
                     PH.vent.trigger("home:display");

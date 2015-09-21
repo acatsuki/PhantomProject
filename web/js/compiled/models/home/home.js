@@ -88,7 +88,6 @@
      * Bind initializer for Admin app
      */
     PH.addInitializer(function() {
-        console.log("addInitializer")
         PH.Home.init();
     });
 

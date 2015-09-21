@@ -74,8 +74,7 @@ header {
       top: 217px;
       left: 74px; }
     #center-menu .concert span:hover {
-      color: #A00000;
-      cursor: pointer; }
+      color: #A00000; }
   #center-menu .guitars {
     background: url("../src/img/guitars.png") no-repeat;
     width: 277px;

@@ -19,12 +19,18 @@
 
         var display = _.bind(function(){
             var self = this;
-            
+
             requirejs(["/webapp/core/main/lang/ph.lang."+ PH.location +".js"], function() {
                 self.layout = new self.Views.Layout({
                     model: new Backbone.Model(PH.lang.core)
                 });
                 self.layout.render();
+                
+                var header = new self.Views.Header({
+                    model: new Backbone.Model(PH.lang.core)
+                });
+
+                self.layout.headerRegion.show(header);
 
                 requirejs(['homeDust', 'home'], function () {
                     PH.vent.trigger("home:display");
@@ -122,6 +128,7 @@
             "template": "core",
 
             "regions": {
+                "headerRegion": "header",
                 "mainContentRegion": "#main-content"
             },
 
@@ -129,6 +136,16 @@
 
             "initialize": function() {
                 PH.log("[PH.Core.Views.Layout.initialize] Initializing Core layout ", PH.log.DEBUG);
+            }
+        });
+
+        Views.Header = Marionette.LayoutView.extend({
+           "template": "header",
+
+            "regions": {},
+
+            "initialize": function() {
+                PH.log("[PH.Core.Views.Layout.initialize] Initializing Header layout ", PH.log.DEBUG);
             }
         });
 
