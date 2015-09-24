@@ -41,4 +41,4 @@ function getFilename(request, response)
 
 var server = http.createServer(getFilename);
 server.listen(80);
-console.log("Server available..."); 
+console.log("Server available...");
