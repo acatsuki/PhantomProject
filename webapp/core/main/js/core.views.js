@@ -46,7 +46,7 @@
             "regions": {},
 
             "initialize": function() {
-                PH.log("[PH.Core.Views.Layout.initialize] Initializing Header layout ", PH.log.DEBUG);
+                PH.log("[PH.Core.Views.Layout.initialize] Initializing Header layout", PH.log.DEBUG);
             }
         });
 

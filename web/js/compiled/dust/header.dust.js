@@ -1,0 +1,2 @@
+// webapp/core/main/dust/header.dust
+(function(){dust.register("header",body_0);function body_0(chk,ctx){return chk.w("<span class=\"logo-label\">PHANTOM PROJECT</span><div class=\"btn-content\"><button class=\"sign-in\">").f(ctx.get(["inscription"], false),ctx,"h").w("</button><button class=\"sign-up\">").f(ctx.get(["login"], false),ctx,"h").w("</button></div>");}body_0.__dustBody=!0;return body_0;})();
