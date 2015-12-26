@@ -144,8 +144,16 @@
 
             "regions": {},
 
+            "events": {
+                "click .sign-in": "displayRegister"
+            },
+
             "initialize": function() {
                 PH.log("[PH.Core.Views.Layout.initialize] Initializing Header layout", PH.log.DEBUG);
+            },
+
+            "displayRegister": function() {
+                PH.vent.trigger("register:display");
             }
         });
 

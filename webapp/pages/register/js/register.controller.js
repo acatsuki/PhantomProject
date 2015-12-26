@@ -9,13 +9,13 @@
 
 
     /**
-     * Home app
+     * Register app
      * ---------
      *
      * @author Nicolas
      */
-    PH.Home = (function() {
-        var Home = {};
+    PH.Register = (function() {
+        var Register = {};
 
 
         /**
@@ -23,45 +23,36 @@
          */
         /*PH.Router.map(function() {
 
-            // Home form route
-            this.route("Home_home", {
+            // Register form route
+            this.route("Register_Register", {
                 "path": "/",
                 "authed": false,
                 "action": function() {
-                    PH.vent.trigger("Home:display");
+                    PH.vent.trigger("Register:display");
                 }
             });
         });*/
 
         var display = _.bind(function(){
             var self = this;
-
-            requirejs(["/webapp/pages/home/lang/ph.lang."+ PH.location +".js"], function(){
-
-                self.homeLayout = new self.Views.Layout({
-                    model: new self.Models.Home(PH.lang.home)
-                });
-
-                PH.Core.layout.mainContentRegion.show(self.homeLayout);
-            });
-        }, Home);
+        }, Register);
 
         var registerEvents = _.bind(function(){
-            PH.vent.on("home:display", function(){
+            PH.vent.on("Register:display", function(){
                 display();
             });
-        }, Home);
+        }, Register);
 
         /**
-         * Initialize the generic Home system
+         * Initialize the generic Register system
          */
-        Home.init = function() {
-            PH.log("[PH.Home.init] Initializing Home page", PH.log.DEBUG);
+        Register.init = function() {
+            PH.log("[PH.Register.init] Initializing Register page", PH.log.DEBUG);
             registerEvents();
         };
 
 
-        return Home;
+        return Register;
     })();
 
 
@@ -69,7 +60,7 @@
      * Bind initializer for Admin app
      */
     PH.addInitializer(function() {
-        PH.Home.init();
+        PH.Register.init();
     });
 
 

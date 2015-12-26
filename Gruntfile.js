@@ -36,10 +36,21 @@ module.exports = function(grunt) {
 
             },
 
+            "js_register": {
+                "src": [
+                    "webapp/pages/register/js/register.controller.js",
+                    "webapp/pages/register/js/register.models.js",
+                    "webapp/pages/register/js/register.views.js"
+                ],
+                "dest": "web/js/compiled/models/register/register.js"
+
+            },
+
             css: {
                 src: [
                     'web/css/core/*.css',
-                    'web/css/home/*.css'
+                    'web/css/home/*.css',
+                    'web/css/register/*.css'
                 ],
                 dest: 'web/css/concat.css'
             }
@@ -64,7 +75,8 @@ module.exports = function(grunt) {
                     "cwd": "",
                     "src": [
                         "webapp/core/**/dust/*.dust",
-                        "webapp/pages/**/dust/*.dust"
+                        "webapp/pages/**/dust/*.dust",
+                        "webapp/register/**/dust/*.dust"
                     ],
                     "dest": "web/js/compiled/dust",
                     "ext": ".dust.js",
@@ -85,7 +97,8 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'web/css/core/core.css' : 'webapp/core/main/sass/*.scss',
-                    'web/css/home/home.css' : 'webapp/pages/home/sass/*.scss'
+                    'web/css/home/home.css' : 'webapp/pages/home/sass/*.scss',
+                    'web/css/home/home.css' : 'webapp/pages/register/sass/*.scss'
                 }
             }
         },
@@ -113,7 +126,8 @@ module.exports = function(grunt) {
                 "files": "<%= jshint.files %>",
                 "tasks": [
                     "concat:js_core",
-                    "concat:js_home"
+                    "concat:js_home",
+                    "concat:js_register"
                 ]
             }
         }
